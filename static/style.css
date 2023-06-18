@@ -3,12 +3,29 @@ body {
     background-color: #F5F5F5;
     padding: 20px;
     color: #333;
+
 }
 
 h1 {
     text-align: center;
     color: #4F4F4F;
+    padding: 10px 0;
+    background: #808080;
+    color: white;
+    text-align: center;
+    font-size: 16pt;
+    border-style: dashed;
+    border-color: #C0C0C0;
+    box-shadow: 10px 10px 5px lightblue;
+    border-radius: 8px;
+
+
 }
+
+
+
+
+
 
 .post {
     background-color: #FFF;
@@ -25,4 +42,43 @@ h1 {
 
 .post p {
     margin: 10px 0;
+}
+
+
+
+#content {
+    height: 70vh;
+    width: 100%; /* Adjust the width as needed */
+    box-shadow: 10px 10px 5px lightblue;
+    border-radius: 8px;
+}
+
+.round_shadow {
+    box-shadow: 10px 10px 5px lightblue;
+    border-radius: 8px;
+}
+
+.delete {
+  text-decoration: none !important;
+  border: 1px solid black;
+  border-style: groove;
+  border-radius: 8px;
+  padding: 2px;
+  color:white;
+  background:red;
+  float: right;
+
+}
+
+.update {
+  text-decoration: none !important;
+  border: 1px solid black;
+  border-style: groove;
+  border-radius: 8px;
+  padding: 2px;
+  color:white;
+  background:green;
+  float: right;
+  margin-right: 10px;
+
 }

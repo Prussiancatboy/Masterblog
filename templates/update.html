@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Post</title>
+</head>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<body>
+    <h1 class="top_bar">Update Post</h1>
+    <form action="/update/{{ post['id'] }}" method="POST">
+        <label for="title">Title:</label><br>
+        <input class="round_shadow" type="text" id="title" name="title" value="{{ post['title'] }}" required><br><br>
+        <label for="author">Author:</label><br>
+        <input class="round_shadow" type="text" id="author" name="author" value="{{ post['author'] }}" required><br><br>
+
+
+
+        <label for="content">Content:</label><br>
+        <textarea class="round_shadow" id="content" name="content" rows="5" required>{{ unedited_content }}</textarea><br><br>
+
+        <input type="submit" value="Update">
+    </form>
+</body>
+</html>
